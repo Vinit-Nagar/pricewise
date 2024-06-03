@@ -37,11 +37,11 @@
   }
 
   .hero-carousel {
-    @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#F2F4F7] rounded-[30px] sm:mx-auto;
+    @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[484px] h-[500px] w-full bg-[#F2F4F7] rounded-[30px] sm:mx-auto;
   }
 
   .carousel {
-    @apply flex flex-col-reverse h-[700px];
+    @apply flex flex-col-reverse h-[500px];
   }
 
   .carousel .control-dots {
