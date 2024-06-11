@@ -5,8 +5,8 @@ import {
   getHighestPrice,
   getAveragePrice,
   getEmailNotifType,
-} from "@/lib/utils";
-import { connectToDB } from "@/lib/mongoose";
+} from "@/lib/utlis";
+import { connectToDb } from "@/lib/mongoose";
 import Product from "@/lib/models/product.model";
 import { scrapeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
@@ -17,7 +17,7 @@ export const revalidate = 0;
 
 export async function GET(request: Request) {
   try {
-    connectToDB();
+    connectToDb();
 
     const products = await Product.find({});
 
