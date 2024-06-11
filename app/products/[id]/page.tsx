@@ -1,10 +1,8 @@
-// import Modal from "@/components/Modal";
-
+import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/ProductCard";
 import { getProductById, getSimilarProducts } from "@/lib/actions"
 import { formatNumber } from "@/lib/utlis";
-
 import { Product } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -153,7 +151,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                         </div>
                     </div>
 
-                    {/* <Modal productId={id} /> */}
+                    <Modal productId={id} />
                 </div>
             </div>
 
